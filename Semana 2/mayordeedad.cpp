@@ -6,7 +6,7 @@ int main()
 {
     int edad{0};
 
-    std::cout << "Ingrese la edad del usurario: ";
+    std::cout << "Ingrese la edad del usuario: ";
     std::cin >> edad;
 
     if (edad >= 18)
