@@ -7,28 +7,28 @@ int main()
     Account account1{"Jane Green", 50};
     Account account2{"John Blue", -7};
 
-    std::cout << "account 1" << account1.getName() << "balance is $" << account1.getBalance();
-    std::cout << "account 2" << account2.getName() << "balance is $" << account2.getBalance();
+    std::cout << "Cuenta 1: " << account1.getName() << " el saldo es  $" << account1.getBalance() << std::endl;
+    std::cout << "Cuenta 2: " << account2.getName() << " el saldo es $" << account2.getBalance();
 
-    std::cout << "\n\nEnter deposit ammount for account1: ";
+    std::cout << "\n\nIntroducir el importe del depósito a la cuenta1: ";
     int depositAmount;
     std::cin >> depositAmount;
 
-    std::cout << "adding" << depositAmount << "to account 1 balance";
+    std::cout << "añadiendo $" << depositAmount << " a la cuenta1 saldo $";
     account1.deposit(depositAmount);
 
 
-    std::cout << "\n\naccount1: " << account1.getName() << " balance is $"<< account1.getBalance();
-    std::cout << "\naccount2: " << account2.getName() << " balance is $" << account2.getBalance();
+    std::cout << "\n\nCuenta1: " << account1.getName() << " el saldo es  $"<< account1.getBalance();
+    std::cout << "\nCuenta2: " << account2.getName() << " el saldo es  $" << account2.getBalance();
 
 
-    std::cout << "\n\nEnter deposit amount for account2: ";
+    std::cout << "\n\nIntroducir el importe del depósito a la cuenta1: ";
     std::cin >> depositAmount;
-    std::cout << "adding " << depositAmount << " to account2 balance";
+    std::cout << "añadiendo $" << depositAmount << " a la cuenta2 saldo $";
     account2.deposit(depositAmount);
 
 
-    std::cout << "\n\naccount1: " << account1.getName() << " balance is $" << account1.getBalance(); 
-    std::cout << "\naccount2: " << account2.getName() << " balance is $" << account2.getBalance() << std::endl; 
+    std::cout << "\n\nCuenta1: " << account1.getName() << " el saldo es  $" << account1.getBalance(); 
+    std::cout << "\nCuenta2: " << account2.getName() << " el saldo es  $" << account2.getBalance() << std::endl; 
 
 }
