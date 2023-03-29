@@ -3,33 +3,33 @@
 class Account {
 public:
 
-    Account(std::string accountName, int initialBalance)
-        : name{accountName} {
+    Account(std::string nombre_cuenta, int saldo_inicial)
+        : nombre{nombre_cuenta} {
 
-        if (initialBalance > 0) {
-            balance = initialBalance;
+        if (saldo_inicial > 0) {
+            saldo = saldo_inicial;
         }
     
     }
-    void deposit (int depositAmount) {
-        if (depositAmount > 0) {
-            balance = balance + depositAmount;
+    void deposito (int deposito_importe) {
+        if (deposito_importe > 0) {
+            saldo = saldo + deposito_importe;
         }
     }
 
-    int getBalance() const {
-        return balance;
+    int obtener_saldo() const {
+        return saldo;
     }
 
-    void setName(std::string accountName) {
-        name = accountName;
+    void poner_nombre(std::string nombre_cuenta) {
+        nombre = nombre_cuenta;
     }
 
-    std::string getName() const {
-        return name;
+    std::string obtener_nombre() const {
+        return nombre;
     }
 
 private:
-    std::string name;
-    int balance{0};
+    std::string nombre;
+    int saldo{0};
 };
