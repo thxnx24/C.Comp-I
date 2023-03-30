@@ -1,7 +1,8 @@
 #include <string>
 #include <iostream>
 
-class Cuenta {
+class Cuenta 
+{
 public:
 
     Cuenta(std::string nombre_cuenta, int saldo_inicial)
@@ -37,7 +38,6 @@ public:
         else{
             std::cout << "\nSu saldo es insuficiente para hacer un retiro de dinero." << std::endl;
         }
-    
     }
 private:
     std::string nombre;
