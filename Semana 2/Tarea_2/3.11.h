@@ -60,7 +60,6 @@ public:
         std::cout << "Color: " << color << std::endl;
         std::cout << "Cilindrada: " << cilindrada << std::endl;
     }
-
 private:
     std::string marca;
     std::string tipo_combustible;
