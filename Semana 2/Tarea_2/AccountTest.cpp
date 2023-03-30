@@ -27,7 +27,6 @@ int main()
     std::cout << "añadiendo $" << depositAmount << " a la cuenta2 saldo $";
     account2.deposito(depositAmount);
 
-
     std::cout << "\n\nCuenta1: " << account1.obtener_nombre() << " el saldo es  $" << account1.obtener_saldo(); 
     std::cout << "\nCuenta2: " << account2.obtener_nombre() << " el saldo es  $" << account2.obtener_saldo() << std::endl; 
 

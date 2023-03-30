@@ -1,6 +1,7 @@
 #include <string>
 
-class Account {
+class Account 
+{
 public:
 
     Account(std::string nombre_cuenta, int saldo_inicial)
@@ -28,7 +29,6 @@ public:
     std::string obtener_nombre() const {
         return nombre;
     }
-
 private:
     std::string nombre;
     int saldo{0};
