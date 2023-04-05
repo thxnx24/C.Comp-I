@@ -13,11 +13,12 @@ int main()
 
     if ( (val1 >= 48 && val1 <= 57) && (val2 >= 48 && val2 <= 57))
     {
-
+        int suma = (val1 -'0') + (val2 - '0');
+        std::cout << "La suma es: " << suma << std::endl;
     }
     else
     {
-        std::cout << "Uno o ambos caractereres no representan un número";
+        std::cout << "Uno o ambos caractereres no representan un número"<< std::endl;
     }
 
 
