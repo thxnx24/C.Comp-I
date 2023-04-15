@@ -3,42 +3,18 @@
 */
 
 #include <iostream>
- 
-long long primo(long long n)
-{
-	if (n % 2 == 0)
-	{	
-        return 0;
-    }		
-	for (long long i = 3; i <= ((n / 2) + 1); i += 2)	
-	{
-		if (n % i == 0)
-			return 0;	//no primo
-	}
-	return 1;
-}
- 
-long long primo_mayor(long long n)
-{
-	long long factor = 0;
-	for(long long x = 3; x <= n; x += 2)
-	{
-		if (n % x == 0)
-		{
-			if (primo(x))
-			{
-				factor = x;
-				std::cout << factor << std::endl;
-			}
-		}
-	}
-	return factor;
-}
 
 int main()
 {
-	long long numero = 600851475143;
-	std::cout << "El mayor factor primo de 600851475143 es:\n" <<primo_mayor(numero);
- 
-	return 0;
+    long long num = 600851475143;
+
+    for (int i = 3; i != num; i += 2)
+    {
+        if (num % i == 0) 
+        {
+            num = num / i;
+        }
+    }
+    std::cout << "El mayor numero primo de: " << num;
+    return 0;
 }
