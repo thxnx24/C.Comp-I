@@ -15,6 +15,6 @@ int main()
             suma += x;
         }
     }
-    std::cout<<"La suma de los múltiplos de 3 y 5 por debajo del 1000 es: " << suma;
+    std::cout << "La suma de los múltiplos de 3 y 5 por debajo del 1000 es: " << suma;
     return 0;
 }
