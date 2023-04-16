@@ -14,7 +14,6 @@ int revertir_num(int numero)
         remanente = numero % 10;
         rev_num = rev_num * 10 + remanente;
         numero /= 10;
-
     }
     return rev_num;
 }
