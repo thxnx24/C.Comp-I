@@ -25,6 +25,5 @@ int main()
     std::cout << "La diferencia entre la suma de cuadrados y el cuadrado de la suma es: " << diferencia;
 
     return 0;
-
 }
 
