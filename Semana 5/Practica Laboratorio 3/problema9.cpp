@@ -11,34 +11,23 @@ Encuentra el producto abc .
 
 int main()
 {
-    int max{1000};
-    int x;
+    int a;
+    int b;
+    int c;
+    int producto;
 
-    for(int a = 1; a < max; a++)
+    for (a=1; a<=500; a++)
     {
-        for (int b = a + 1; b < a; b++)
+        for (b=1; b<=500; b++)
         {
-            for (int c = b + 1; b < max; c++)
+            c = 1000-b-a;
+            if (a*a + b*b - c*c == 0 && a < b )
             {
-                if (a < b && b < c)
-                {
-                    int suma = (a * a) + (b*b);
-                    if (suma == c * c)
-                    {
-                        if (a + b + c == max)
-                        {
-                            x = a * b *c;
-                            max = (a +b + c) + 1;
-                        }
-                        else
-                        {
-                            ++a;
-                        }
-                    }
-                }
+                producto = a*b*c;
+                std::cout << "El producto de a*b*c es: "<< producto << std::endl;
+                std::cout << "Los numeros son: " << a << ", " << b << ", " << c;
             }
         }
     }
-    std::cout<<"El producto de a * b * c en donde (a + b + c) = 1000 es: " << x;
     return 0;
 }
