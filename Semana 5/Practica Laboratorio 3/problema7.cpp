@@ -10,7 +10,7 @@ int main()
     int primo{0};
     bool encontrar_primo{true};
 
-    for (int i = 3; i <10002; i ++)
+    for (int i = 3; contador <10002; i ++)
     {
         for (int j = 2; j < i; j ++)
         {
@@ -30,6 +30,6 @@ int main()
             contador += 1;
         }
     }
-    std::cout << "El 10001 es el " << primo << " numero primo";
+    std::cout << "El numero primo 10001 es el " << primo ;
     return 0;
 }
