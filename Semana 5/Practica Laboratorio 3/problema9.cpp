@@ -16,14 +16,14 @@ int main()
     int c;
     int producto;
 
-    for (a=1; a<=500; a++)
+    for (a=1; a <= 500; a++)
     {
-        for (b=1; b<=500; b++)
+        for (b = 1; b <= 500; b++)
         {
-            c = 1000-b-a;
+            c = 1000 - b - a;
             if (a*a + b*b - c*c == 0 && a < b )
             {
-                producto = a*b*c;
+                producto = a * b * c;
                 std::cout << "El producto de a*b*c es: "<< producto << std::endl;
                 std::cout << "Los numeros son: " << a << ", " << b << ", " << c;
             }
