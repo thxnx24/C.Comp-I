@@ -13,7 +13,7 @@ int main(){
     
     for (long long i = 0; i < numero.size()-12; i++)
     { //es 12 por que en algun momento despues de ir 
-        long long multi=1; //iterando de 13 en  13 te va a salir un error, empieza en cero
+        long long multi = 1; //iterando de 13 en  13 te va a salir un error, empieza en cero
         for (int a = 0; a < 13; a++)
         {
             int val = numero.at(a+i) - '0'; //La funcion at determina la posicion de un determinado caracter
