@@ -7,8 +7,8 @@ Encuentra el palíndromo más grande hecho del producto de dos números de 3 dí
 
 int revertir_num(int numero)
 {
-    int rev_num=0;
-    int remanente=0;
+    int rev_num = 0;
+    int remanente = 0;
     while(numero != 0)
     {
         remanente = numero % 10;
