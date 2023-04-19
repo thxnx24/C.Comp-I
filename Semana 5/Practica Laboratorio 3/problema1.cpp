@@ -8,7 +8,7 @@ Encuentra la suma de todos los múltiplos de 3 o 5 por debajo de 1000.
 int main()
 {   
     int suma{0};
-    for(int x=1; x<1000; ++x)
+    for(int x=1; x < 1000; ++x)
     {
         if(x % 3 == 0 || x % 5 == 0)
         {
