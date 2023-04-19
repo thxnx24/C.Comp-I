@@ -8,8 +8,8 @@ long long maximmo_divisor( long long x,  long long y)
 {
     while(x!= 0)
     {
-        long long z=x;
-        x = y%x;
+        long long z = x;
+        x = y % x;
         y = z;
     }
     return y; 
@@ -24,7 +24,7 @@ int main()
 {
      long long resultado{1};
 
-    for(int i=2; i<=20; ++i)
+    for(int i = 2; i <= 20; ++i)
     {
         resultado = minimo_multiplo(resultado,i);
     }
