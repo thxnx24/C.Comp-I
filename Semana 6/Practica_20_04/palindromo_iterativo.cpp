@@ -1,6 +1,6 @@
 #include <iostream>
 
-int palin(int array[],  int tam)
+int palindromo(int array[],  int tam)
 {
     int t;
     for(int i = 0; i < tam/2; i++)
@@ -29,7 +29,7 @@ int main()
 {
     int array[] = {1,3,4,2,3,2,1};
     
-    palin(array,7);
+    palindromo(array,7);
     
     return 0;
 }
