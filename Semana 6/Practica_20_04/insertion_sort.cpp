@@ -26,12 +26,12 @@ void insert_sort(int arr[],int tam)
             al--;
         }
         arr[al] = camb;
-    }
-    std::cout << "El arreglo ordenado por InsertionSort es: ";
+    }    
 }
 
 void imprimir(const int arra[],const int tam)
 {
+    std::cout << "El arreglo ordenado por InsertionSort es: ";
     for(int i = 0; i < tam; i++)
     {    
         std::cout << arra[i] << " ";

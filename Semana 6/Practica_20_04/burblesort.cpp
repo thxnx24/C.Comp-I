@@ -28,11 +28,11 @@ void BubbleSort(int array[], int n)
             }
         }
     }
-    std::cout << "El arreglo ordenado por Bublesort es: ";
 }
 
 void imprimir(const int arra[],const int tam)
 {
+    std::cout << "El arreglo ordenado por Bublesort es: ";
     for(int i = 0; i < tam; i++)
     {    
         std::cout << arra[i] << " ";
