@@ -13,7 +13,7 @@ int main()
     return 0;
 }
 
-void insertion_sort(int arr[],int tam)
+void insertion_sort(int arr[], int tam)
 {
     for(int i = 1; i < tam; i++)
     {
@@ -29,7 +29,7 @@ void insertion_sort(int arr[],int tam)
     }    
 }
 
-void imprimir(const int arra[],const int tam)
+void imprimir(const int arra[], const int tam)
 {
     std::cout << "El arreglo ordenado por InsertionSort es: ";
     for(int i = 0; i < tam; i++)
