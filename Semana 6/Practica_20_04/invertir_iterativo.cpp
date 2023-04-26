@@ -1,31 +1,37 @@
 #include <iostream>
-void imprimir_Arreglo(const int arreglo[], int tamaño);
-void invertir_Arreglo(const int arreglo[], int tamaño);
+using namespace std;
+void intercambio(int &a, int &b);
+void invertir(int arr[],const int tam);
+void imprimir(const int arra[],const int tam);
 
-int main()
-{
-    int arreglo[] = {1,4,5,7,8,9,0,9};
-    imprimir_Arreglo(arreglo,8);
-    invertir_Arreglo(arreglo,8);
+int main() {
+    int array[] = {1, 2, 3, 8, 5, 12, 6, 7};
+    
+    invertir(array, 8) ;
+    imprimir(array, 8);
+    
     return 0;
 }
 
-void imprimir_Arreglo(const int arreglo[], int tamaño)
+void intercambio(int &a, int &b){
+    int tmp = a;
+    a = b;
+    b = tmp;
+}
+
+void invertir(int arr[],const int tam)
 {
-    for (int i = 0; i < tamaño; i++) //recorremos el arreglo desde el elemento 0 al elemento n;
+    for(int i = 0; i <tam/2;i++)
     {
-        std::cout << arreglo[i] << " ";  //se imprime cada uno de los elementos 
+        intercambio(arr[i],arr[tam-i-1]);
     }
 }
 
-void invertir_Arreglo(int arreglo[], int tamaño)
+void imprimir(const int arra[],const int tam)
 {
-    for (int i = 0; i < tamaño/2; i++)
-    {
-        int x = arreglo[i];
-        arreglo[i] = arreglo[tamaño - 1 - i];
-        arreglo[tamaño - 1 - i] = x;
+    std::cout << "El arreglo invertido es: ";
+    for(int i = 0; i < tam; i++)
+    {    
+        cout << arra[i] << " ";
     }
 }
-
-
