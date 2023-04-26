@@ -1,6 +1,6 @@
 #include <iostream>
-void BubbleSort(int a[],int n);
-void imprimir(const int arra[],const int tam);
+void BubbleSort(int a[], int n);
+void imprimir(const int arra[], const int tam);
 
 int main()
 {
@@ -23,14 +23,14 @@ void BubbleSort(int array[], int n)
             if(array[j-1] > array[j])
             {
                 aux = array[j-1];
-                array[j-1]=array[j];
+                array[j-1] = array[j];
                 array[j] = aux;
             }
         }
     }
 }
 
-void imprimir(const int arra[],const int tam)
+void imprimir(const int arra[], const int tam)
 {
     std::cout << "El arreglo ordenado por Bublesort es: ";
     for(int i = 0; i < tam; i++)
