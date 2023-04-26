@@ -1,19 +1,19 @@
 #include <iostream>
 
-void insert_sort(int arr[],int tam);
+void insertion_sort(int arr[],int tam);
 void imprimir(const int arra[],const int tam);
 
 int main()
 {
     int arreglo[]={4,1,2,3,5,6,8,0,7};
       
-    insert_sort(arreglo,9);
+    insertion_sort(arreglo,9);
     imprimir(arreglo,9);
 
     return 0;
 }
 
-void insert_sort(int arr[],int tam)
+void insertion_sort(int arr[],int tam)
 {
     for(int i = 1; i < tam; i++)
     {
