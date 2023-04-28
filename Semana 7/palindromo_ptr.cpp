@@ -12,10 +12,6 @@ bool es_palindromo(int *arr, const int tam)
     }
     return true;
 }
-bool esPalRec(const int arr[], int tam , int ini = 0)
-{
-
-}
 
 int main()
 {
