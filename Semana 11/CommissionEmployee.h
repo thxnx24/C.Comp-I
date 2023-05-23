@@ -23,13 +23,15 @@ class CommissionEmployee
         void setCommissionRate(double);
         double getCommissionRate() const;
 
-        void earnings() const;
+        double earnings() const;
         std::string toString() const;
+    
     private:
         std::string firstName;
         std::string lastName;
-        std::string SocialSecurityNumber;
-        double grossSale;
+        std::string socialSecurityNumber;
+        double grossSales;
         double commissionSale;
+        double commissionRate;
 };
 #endif
