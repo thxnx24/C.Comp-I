@@ -32,6 +32,4 @@ class CommissionEmployee
         double grossSale;
         double commissionSale;
 };
-
-
 #endif
