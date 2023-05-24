@@ -1,3 +1,5 @@
+//fig 11.8
+
 #include <iomanip>
 #include <iostream>
 #include <stdexcept>
@@ -16,8 +18,6 @@ BasePlusCommissionEmployee::BasePlusCommissionEmployee(
         setCommissionRate(rate); 
         setBaseSalary(salary);
     }
-
-
 
 void BasePlusCommissionEmployee::setFirstName(const string& first) 
 {
@@ -108,6 +108,7 @@ string BasePlusCommissionEmployee::toString() const
         << "\nbase salary: " << baseSalary;
     return output.str();
 }
+//fig 11.9
 
 int main() 
 {
@@ -125,6 +126,7 @@ int main()
         <<  "\nBase salary is " << employee.getBaseSalary() << endl;
 
     employee.setBaseSalary(1000);
+    
     cout << "\nUpdated employee information from function toString: \n\n"
         << employee.toString();
 

@@ -1,3 +1,4 @@
+//fig 11.12
 #ifndef COMISSION_H
 #define COMMISION_H
 #include <string>
@@ -31,7 +32,6 @@ class CommissionEmployee
         std::string lastName;
         std::string socialSecurityNumber;
         double grossSales;
-        double commissionSale;
         double commissionRate;
 };
 #endif

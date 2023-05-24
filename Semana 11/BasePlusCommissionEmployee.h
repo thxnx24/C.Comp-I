@@ -1,3 +1,4 @@
+//fig 11.7
 #ifndef BASEPLUS_H
 #define BASEPLUS_H
 
@@ -37,9 +38,4 @@ class BasePlusCommissionEmployee {
         double commissionRate; 
         double baseSalary; 
 }; 
-
-
-
-
-
 #endif
