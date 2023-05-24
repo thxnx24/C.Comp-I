@@ -9,44 +9,40 @@ BasePlusCommissionEmployee::BasePlusCommissionEmployee(
     const string& first, const string& last, const string& ssn,
     double sales, double rate, double salary) 
     {
-    firstName = first; // should validate
-    lastName = last; // should validate
-    socialSecurityNumber = ssn; // should validate
-    setGrossSales(sales); // validate and store gross sales
-    setCommissionRate(rate); // validate and store commission rate
+        firstName = first; 
+        lastName = last; 
+        socialSecurityNumber = ssn; 
+        setGrossSales(sales); 
+        setCommissionRate(rate); 
+        setBaseSalary(salary);
     }
 
 
 
 void BasePlusCommissionEmployee::setFirstName(const string& first) 
 {
-    firstName = first; // should validate
+    firstName = first; 
 }
-
 
 string BasePlusCommissionEmployee::getFirstName() const 
 {
     return firstName;
 }
 
-
 void BasePlusCommissionEmployee::setLastName(const string& last) 
 {
     lastName = last; 
 }
-
 
 string BasePlusCommissionEmployee::getLastName() const 
 {
     return lastName;
 }
 
-
 void BasePlusCommissionEmployee::setSocialSecurityNumber(const string& ssn) 
 {
     socialSecurityNumber = ssn;
 }
-
 
 string BasePlusCommissionEmployee::getSocialSecurityNumber() const 
 {
@@ -107,28 +103,28 @@ string BasePlusCommissionEmployee::toString() const
     output << fixed << setprecision(2);
     output << "base-salaried commission employee: " << firstName << ' '
         << lastName << "\nsocial security number: " << socialSecurityNumber
-        << socialSecurityNumber << "\ngross sales: " 
-        << grossSales << "\ncommission rate: " << commissionRate
+        << "\ngross sales: " << grossSales 
+        << "\ncommission rate: " << commissionRate
         << "\nbase salary: " << baseSalary;
-
     return output.str();
 }
 
 int main() 
 {
 
-    BasePlusCommissionEmployee employee{"Bob", "Lewis", "333-33-3333",5000, .04, };
+    BasePlusCommissionEmployee employee{"Bob", "Lewis", "333-33-3333",
+        5000, .04, 300};
 
     cout << fixed << setprecision(2); // set floating-point formatting
     cout << "Employee information obtained by get functions: \n"
         << "\nFirst name is " << employee.getFirstName()
         << "\nLast name is " << employee.getLastName()
-        << "\nSocial security number is "
-        << employee.getSocialSecurityNumber()
+        << "\nSocial security number is " << employee.getSocialSecurityNumber()
         << "\nGross sales is " << employee.getGrossSales()
         << "\nCommission rate is " << employee.getCommissionRate()
         <<  "\nBase salary is " << employee.getBaseSalary() << endl;
 
+    employee.setBaseSalary(1000);
     cout << "\nUpdated employee information from function toString: \n\n"
         << employee.toString();
 

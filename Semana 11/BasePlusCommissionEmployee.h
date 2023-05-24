@@ -24,10 +24,11 @@ class BasePlusCommissionEmployee {
         double getCommissionRate() const; 
 
         void setBaseSalary(double); 
-    double getBaseSalary() const;   
+        double getBaseSalary() const;   
 
         double earnings() const; 
         std::string toString() const; 
+    
     private:
         std::string firstName;
         std::string lastName;
