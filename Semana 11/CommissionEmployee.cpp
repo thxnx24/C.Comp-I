@@ -1,3 +1,4 @@
+//fig 11.5
 #include <iomanip>
 #include <stdexcept>
 #include <iostream>
@@ -19,21 +20,18 @@ CommissionEmployee::CommissionEmployee(const string& first,
     {
         firstName = first;
     }
-
     string CommissionEmployee::getFirstName() const {return firstName;}
 
     void CommissionEmployee::setLastName(const string& last)
     {
         lastName = last;
     }
-
     string CommissionEmployee::getLastName() const {return lastName;}
 
     void CommissionEmployee::setSocialSecurityNumber(const string& ssn)
     {
         socialSecurityNumber = ssn;
     }
-
     string CommissionEmployee::getSocialSecurityNumber() const 
     {
         return socialSecurityNumber;
@@ -48,7 +46,6 @@ CommissionEmployee::CommissionEmployee(const string& first,
 
         grossSales = sales;
     }
-
     double CommissionEmployee::getGrossSales() const {return grossSales;}
 
     void CommissionEmployee::setCommissionRate(double rate)
@@ -81,6 +78,8 @@ CommissionEmployee::CommissionEmployee(const string& first,
             << "\ncommission rate: " <<  commissionRate;
         return output.str();
     }
+
+//fig 11.6
 int main()
 {
     CommissionEmployee employee{"Sue","Jones","222-22-2222",10000, .06};
@@ -95,7 +94,10 @@ int main()
 
     employee.setGrossSales(8000);
     employee.setCommissionRate(.1);
+    
     cout << "\nUpdated employee information from function toString: \n\n" 
         << employee.toString();
     cout << "\n\nEmployee's earnings: $" << employee.earnings() << endl;
+    
+    return 0;
 }
