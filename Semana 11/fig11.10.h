@@ -4,7 +4,7 @@
 #define BASEPLUS_H
 
 #include <string> 
-#include "CommissionEmployee2.h" 
+#include "fig11.12.h" 
 
 class BasePlusCommissionEmployee : public CommissionEmployee
 {
