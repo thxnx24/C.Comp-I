@@ -28,7 +28,7 @@ class CommissionEmployee
         double earnings() const;
         std::string toString() const;
     
-    private:
+    protected: //antes era private
         std::string firstName;
         std::string lastName;
         std::string socialSecurityNumber;
