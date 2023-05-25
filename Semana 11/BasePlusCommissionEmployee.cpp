@@ -1,4 +1,4 @@
-//fig 11.8
+//Fig 11.8: BasePlusCommissionEmployee.cpp
 
 #include <iomanip>
 #include <iostream>
@@ -70,6 +70,7 @@ void BasePlusCommissionEmployee::setCommissionRate(double rate)
     {
         throw invalid_argument("Commission rate must be > 0.0 and < 1.0");
     }
+    
     commissionRate = rate;
 }
 
@@ -84,6 +85,7 @@ void BasePlusCommissionEmployee::setBaseSalary(double salary)
     {
         throw invalid_argument("Salary must be >= 0.0");
     }
+    
     baseSalary = salary;
 } 
 
@@ -108,15 +110,15 @@ string BasePlusCommissionEmployee::toString() const
         << "\nbase salary: " << baseSalary;
     return output.str();
 }
-//fig 11.9
+
+//Fig 11.9: fig11_09.cpp
 
 int main() 
 {
-
     BasePlusCommissionEmployee employee{"Bob", "Lewis", "333-33-3333",
         5000, .04, 300};
 
-    cout << fixed << setprecision(2); // set floating-point formatting
+    cout << fixed << setprecision(2);
     cout << "Employee information obtained by get functions: \n"
         << "\nFirst name is " << employee.getFirstName()
         << "\nLast name is " << employee.getLastName()
@@ -124,9 +126,7 @@ int main()
         << "\nGross sales is " << employee.getGrossSales()
         << "\nCommission rate is " << employee.getCommissionRate()
         <<  "\nBase salary is " << employee.getBaseSalary() << endl;
-
     employee.setBaseSalary(1000);
-    
     cout << "\nUpdated employee information from function toString: \n\n"
         << employee.toString();
 

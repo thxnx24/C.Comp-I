@@ -1,10 +1,12 @@
-//fig 11.7
+//Fig 11.7: BasePlusCommissionEmployee.h
+
 #ifndef BASEPLUS_H
 #define BASEPLUS_H
 
-#include <string> // C++ standard string class
+#include <string>
 
-class BasePlusCommissionEmployee {
+class BasePlusCommissionEmployee 
+{
     public:
         BasePlusCommissionEmployee(const std::string&, const std::string&,
         const std::string&, double = 0.0, double = 0.0, double = 0.0);
@@ -38,4 +40,5 @@ class BasePlusCommissionEmployee {
         double commissionRate; 
         double baseSalary; 
 }; 
+
 #endif
