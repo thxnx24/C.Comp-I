@@ -1,4 +1,5 @@
-//fig 11.4
+//Fig 11.4: CommissionEmployee.h
+
 #ifndef COMISSION_H
 #define COMMISION_H
 #include <string>
@@ -34,4 +35,5 @@ class CommissionEmployee
         double grossSales;
         double commissionRate;
 };
+
 #endif
