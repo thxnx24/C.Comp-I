@@ -1,4 +1,4 @@
-//Fig 11.4: CommissionEmployee.h
+
 
 #ifndef COMISSION_H
 #define COMMISION_H
@@ -28,7 +28,7 @@ class CommissionEmployee
         double earnings() const;
         std::string toString() const;
     
-    private: 
+    protected: //antes era private
         std::string firstName;
         std::string lastName;
         std::string socialSecurityNumber;
