@@ -1,9 +1,10 @@
 //Fig. 12.1
 
+
 #include <iostream>
 #include <iomanip>
-#include "CommissionEmployee.h"
-#include "BasePlusCommissionEmployee2.h"
+#include "fig11.4.h"
+#include "fig11.10.h"
 using namespace std;
 
 int main()
@@ -11,20 +12,24 @@ int main()
     CommissionEmployee commissionEmployee{
         "Sue", "Jones", "222-22-2222", 1000, .06};
 
+    
     BasePlusCommissionEmployee basePlusCommissionEmployee{
         "Bob", "Lewis", "333-33-3333", 5000, .04, 300};
 
     cout << fixed << setprecision(2);
+
 
     cout << "DISPLAY BASE-CLASS AND DERIVED CLASS OBJECTS:\n"
         << commissionEmployee.toString()
         << "\n\n"
         << basePlusCommissionEmployee.toString();
 
+    
     CommissionEmployee* commissionEmployeePtr{&commissionEmployee};
     cout << "\n\nCALLING TOSTRING WITH BASE-CLASS POINTER TO "
         << "\nBASE-CLASS OBJECT INVOKES BASE-CLASS TOSTRING FUNCTION:\n"
         << commissionEmployeePtr->toString();
+
 
     BasePlusCommissionEmployee* basePlusCommissionEmployeePtr{
         &basePlusCommissionEmployee};
@@ -33,8 +38,8 @@ int main()
         << "TOSTRING FUNCTION:\n"
         << basePlusCommissionEmployeePtr->toString();
     
-    commissionEmployeePtr = &basePlusCommissionEmployee;
 
+    commissionEmployeePtr = &basePlusCommissionEmployee;
     cout << "\n\nCALLING TOSTRING WITH BASE-CLASS POINTER TO "
         << "DERIVED-CLASS OBJECT\nINVOKES BASE-CLASS TOSTRING "
         << "FUNCTION ON THAT DERIVED-CLASS OBJECT:\n"
