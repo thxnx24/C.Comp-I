@@ -4,7 +4,7 @@
 #include <stdexcept>
 #include <iostream>
 #include <sstream>
-#include "CommissionEmployee.h"
+#include "fig11.4.h"
 using namespace std;
 
 CommissionEmployee::CommissionEmployee(const string& first,

@@ -1,7 +1,7 @@
 //Fig 11.10: BasePlusCommissionEmployee2
 
-#ifndef BASEPLUS2_H
-#define BASEPLUS2_H
+#ifndef BASEPLUS_H
+#define BASEPLUS_H
 
 #include <string> 
 #include "CommissionEmployee2.h" 
@@ -17,7 +17,6 @@ class BasePlusCommissionEmployee : public CommissionEmployee
 
         double earnings() const; 
         std::string toString() const; 
-    
     private:
         double baseSalary; 
 };

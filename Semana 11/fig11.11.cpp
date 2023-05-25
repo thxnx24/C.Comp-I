@@ -4,7 +4,7 @@
 #include <iostream>
 #include <sstream>
 #include <stdexcept>
-#include "BasePlusCommissionEmployee2.h"
+#include "fig11.10.h"
 using namespace std;
 
 BasePlusCommissionEmployee::BasePlusCommissionEmployee(
