@@ -1,7 +1,7 @@
 //Fig 11.8: BasePlusCommissionEmployee.cpp
 
-#include <iomanip>
 #include <iostream>
+#include <iomanip>
 #include <stdexcept>
 #include <sstream>
 #include "fig11.7.h"
@@ -122,7 +122,8 @@ int main()
     cout << "Employee information obtained by get functions: \n"
         << "\nFirst name is " << employee.getFirstName()
         << "\nLast name is " << employee.getLastName()
-        << "\nSocial security number is " << employee.getSocialSecurityNumber()
+        << "\nSocial security number is " 
+        << employee.getSocialSecurityNumber()
         << "\nGross sales is " << employee.getGrossSales()
         << "\nCommission rate is " << employee.getCommissionRate()
         <<  "\nBase salary is " << employee.getBaseSalary() << endl;
