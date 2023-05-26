@@ -1,10 +1,10 @@
-//Fig 11.10: BasePlusCommissionEmployee2
+//Fig 11.10: BasePlusCommissionEmployee.h
 
 #ifndef BASEPLUS_H
 #define BASEPLUS_H
 
 #include <string> 
-#include "fig11.12.h" 
+#include "CommissionEmployee.h" 
 
 class BasePlusCommissionEmployee : public CommissionEmployee
 {

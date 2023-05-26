@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <iomanip>
-#include "fig11.4.h"
+#include "fig11.12.h"
 #include "fig11.10.h"
 using namespace std;
 

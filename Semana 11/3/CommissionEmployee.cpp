@@ -1,10 +1,8 @@
-//Fig 11.5 CommisionEmployee.cpp
-
 #include <iomanip>
 #include <stdexcept>
 #include <iostream>
 #include <sstream>
-#include "fig11.4.h"
+#include "CommissionEmployee.h"
 using namespace std;
 
 CommissionEmployee::CommissionEmployee(const string& first,
@@ -79,8 +77,6 @@ string CommissionEmployee::toString() const
         << "\ncommission rate: " <<  commissionRate;
     return output.str();
 }
-
-//Fig 11.6: fig11_06.cpp
 
 int main()
 {

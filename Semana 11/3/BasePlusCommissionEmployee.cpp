@@ -1,10 +1,10 @@
-//Fig 11.11:  BasePlusCommissionEmployee2.cpp
+//Fig 11.11:  BasePlusCommissionEmployee.cpp
 
 #include <iomanip>
 #include <iostream>
 #include <sstream>
 #include <stdexcept>
-#include "fig11.10.h"
+#include "BasePlusCommissionEmployee.h"
 using namespace std;
 
 BasePlusCommissionEmployee::BasePlusCommissionEmployee(
@@ -56,7 +56,8 @@ int main()
     cout << "Employee information obtained by get functions: \n"
         << "\nFirst name is " << employee.getFirstName()
         << "\nLast name is " << employee.getLastName()
-        << "\nSocial security number is " << employee.getSocialSecurityNumber()
+        << "\nSocial security number is " 
+        << employee.getSocialSecurityNumber()
         << "\nGross sales is " << employee.getGrossSales()
         << "\nCommission rate is " << employee.getCommissionRate()
         <<  "\nBase salary is " << employee.getBaseSalary() << endl;

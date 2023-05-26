@@ -1,71 +1,86 @@
+//Fig 11.5 CommisionEmployee.cpp
+
 #include <iomanip>
-#include <iostream>
 #include <stdexcept>
+#include <iostream>
 #include <sstream>
 #include "CommissionEmployee.h"
 using namespace std;
 
-CommissionEmployee::CommissionEmployee(const string &first,
-    const string &last, const string &ssn, double sales, double rate)
-    :firstName(first), lastName(last), socialSecurityNumber(ssn) {
+CommissionEmployee::CommissionEmployee(const string& first,
+    const string& last, const string& ssn, double sales, double rate)
+    {
+        firstName = first;
+        lastName = last;
+        socialSecurityNumber = ssn;
         setGrossSales(sales);
         setCommissionRate(rate);
     }
 
-void CommissionEmployee::setFirstName(const string &first) {
+void CommissionEmployee::setFirstName(const string& first)
+{
     firstName = first;
 }
-
 string CommissionEmployee::getFirstName() const {return firstName;}
 
-void CommissionEmployee::setLastName(const string &last){
+void CommissionEmployee::setLastName(const string& last)
+{
     lastName = last;
 }
-
 string CommissionEmployee::getLastName() const {return lastName;}
 
-void CommissionEmployee::setSocialSecurityNumber(const string& ssn){
+void CommissionEmployee::setSocialSecurityNumber(const string& ssn)
+{
     socialSecurityNumber = ssn;
 }
-
-string CommissionEmployee::getSocialSecurityNumber() const {
+string CommissionEmployee::getSocialSecurityNumber() const 
+{
     return socialSecurityNumber;
 }
 
-void CommissionEmployee::setGrossSales(double sales){
-    if (sales < 0.0) {
+void CommissionEmployee::setGrossSales(double sales)
+{
+    if (sales <= 0.0)
+    {
         throw invalid_argument("Gross sales must be >= 0.0");
     }
 
     grossSales = sales;
 }
-
 double CommissionEmployee::getGrossSales() const {return grossSales;}
 
-void CommissionEmployee::setCommissionRate(double rate){
-    if (rate <= 0.0 || rate >= 1.0){
+void CommissionEmployee::setCommissionRate(double rate)
+{
+    if (rate <= 0.0 || rate >= 1.0)
+    {
         throw invalid_argument("Commission rate must be > 0.0 and < 1.0");
     }
 
     commissionRate = rate;
 }
 
-double CommissionEmployee::getCommissionRate() const {return commissionRate;}
-
-double CommissionEmployee::earnings() const {
-    return getCommissionRate() * getGrossSales();
+double CommissionEmployee::getCommissionRate() const 
+{
+    return commissionRate;
 }
 
-string CommissionEmployee::toString() const{
+double CommissionEmployee::earnings() const
+{
+    return commissionRate * grossSales;
+}
+
+string CommissionEmployee::toString() const 
+{
     ostringstream output;
     output << fixed << setprecision(2);
-    output << "commission employee: "
-        << getFirstName() << ' ' << getLastName()
-        << "\nsocial security number: " << getSocialSecurityNumber()
-        << "\ngross sales: " << getGrossSales()
-        << "\ncommission rate: " << getCommissionRate();
+    output << "commission employee: " << firstName << " " << lastName
+        << "\nsocial security number: " << socialSecurityNumber
+        << "\ngross sales: " << grossSales
+        << "\ncommission rate: " <<  commissionRate;
     return output.str();
 }
+
+//Fig 11.6: fig11_06.cpp
 
 int main()
 {
@@ -87,4 +102,3 @@ int main()
     
     cout << "\n\nEmployee's earnings: $" << employee.earnings() << endl;
 }
-
