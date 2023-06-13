@@ -4,7 +4,7 @@
 #include <iostream>
 
 class Luca{
-    private:
+    protected:
         int sol;
         int cents;
     public:
@@ -26,7 +26,7 @@ Luca operator+(const Luca o, const Luca p){
     }
     return tmp;
 }
-std::ostream& operator << (std::ostream &output, const Luca &o){
+std::ostream& operator << (ostream &output, const Luca &o){
     output << "S/. " << o.sol << "." << o.cents;
     return output;
 }
