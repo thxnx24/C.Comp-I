@@ -1,7 +1,7 @@
 /*Defina y coloque un ejemplo de implementación sobre:
 
 - Downcasting: Es el proceso en el cual convierte a un puntero o 
-referencia de una clase a un puntero o referencia de una clase 
+referencia de una clase base a un puntero o referencia de una clase 
 derivada.
     
 
