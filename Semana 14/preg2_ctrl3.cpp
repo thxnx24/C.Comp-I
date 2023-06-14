@@ -23,6 +23,16 @@ de un objeto en tiempo de ejecución.
         delete employeePtr;
     }
 
+
+    #include <iostream>
+    #include <typeinfo>
+
+    int main() {
+        int myInt = 42;
+        const std::type_info& type = typeid(myInt);
+        std::cout << "Tipo: " << type.name() << std::endl;
+    }
+
 -  type_info: Es una clase definida en la biblioteca de C++,
    que proporciona información sobre el tipo de un objeto en tiempo de ejecución;
    y se utiliza junto al typeid.
