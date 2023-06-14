@@ -3,6 +3,7 @@
 - Downcasting: Es el proceso en el cual convierte a un puntero o 
 referencia de una clase a un puntero o referencia de una clase 
 derivada.
+    
 
 - dynamic_cast: Es un operador que permite convertir punteros o 
 referencias de una clase base a puntero o referencia de clase 
