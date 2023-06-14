@@ -18,10 +18,10 @@ int main(){
     vec.push_back(ptr1);
     vec.push_back(ptr2);
 
-    delete ptr1;
-    delete ptr2;
-
     for (CommissionEmployee*p:vec){
         cout << p->toString() << endl;
     }
+
+    delete ptr1;
+    delete ptr2;
 }
