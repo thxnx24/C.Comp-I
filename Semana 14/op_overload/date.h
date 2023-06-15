@@ -5,8 +5,8 @@
 #include <iostream>
 
 
-class Date{
-        friend std::ostream& operator<< (std::ostream&, const Date&);
+class Date {
+        friend std::ostream& operator<<(std::ostream&, const Date&);
     public:
         Date(int m = 1, int d = 1, int y = 1900);
         void setDate (int, int, int);
@@ -21,7 +21,6 @@ class Date{
         unsigned int year;
 
         static const std::array <unsigned int, 13> days;
-        void helpIncrements();
-        
+        void helpIncrement();    
 };
 #endif
